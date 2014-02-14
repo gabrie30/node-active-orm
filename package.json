@@ -18,9 +18,14 @@
     "record",
     "pattern"
   ],
+
   "author": "ashod ayanyan",
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/ashoda/node-active-orm/issues"
+  },
+  "devDependencies": {
+    "jasmine-node": "*",
+    "lodash": "*"
   }
 }
