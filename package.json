@@ -1,0 +1,26 @@
+{
+  "name": "node-active-orm",
+  "version": "0.0.1",
+  "description": "basic active record pattern orm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ashoda/node-active-orm.git"
+  },
+  "keywords": [
+    "orm",
+    "active",
+    "record",
+    "active",
+    "record",
+    "pattern"
+  ],
+  "author": "ashod ayanyan",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/ashoda/node-active-orm/issues"
+  }
+}
