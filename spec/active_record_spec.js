@@ -9,23 +9,35 @@ describe("ActiveRecord", function(){
 	User.attr_accessors = { name:"string", phone:"string", address:"string"};
 	User.attr_readers = { last_updated:"string", friend_count:"integer"};
 
-
 	var user = User.new();
+	console.info(User)
 
-	it("creates setters and getters for active record based on model attr_accessors", function(){
+	it("adds setters and getters for active record based on model attr_accessors", function(){
 		_.each(User.attr_accessors , function(value,key){
 			expect(user.hasOwnProperty(key)).toEqual(true)
 		});
 	});
 
-	it("creates getters for active record based on model attr_readers", function(){
+	it("adds getters for active record based on model attr_readers", function(){
 		_.each(User.attr_accessors , function(value,key){
 			expect(user.hasOwnProperty(key)).toEqual(true);
 		});
 	});
 
-	it("creates setters and getters for errors", function(){
+	it("adds setters and getters for errors", function(){
 		expect(user.hasOwnProperty("errors")).toEqual(true);
+	});
+
+	it("adds getters for hasChanged", function(){
+		expect(user.hasOwnProperty("hasChanged")).toEqual(true);
+	});
+
+	it("updates active record with provided attributes" , function(){
+
+	});
+
+	it("saves active record with provided attributes" , function(){
+
 	});
 
 	describe("#toJSON" , function(){
@@ -41,5 +53,9 @@ describe("ActiveRecord", function(){
 			})
 		})
 	})
+
+
+
+
 
 })
