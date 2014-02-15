@@ -1,11 +1,11 @@
 var _ = require('underscore');
-var ORM = require('../lib/orm.js').ORM;
+var Model = require('../lib/model.js').Model;
 var PgAdapter = require('../lib/pg_adapter.js').pgAdapter;
 var ActiveRecord = require('../lib/active_record.js').ActiveRecord;
 
 
 describe("ActiveRecord", function(){
-	var User = new ORM("user" , PgAdapter);
+	var User = new Model("user" , PgAdapter);
 	User.attr_accessors = { name:"string", phone:"string", address:"string"};
 	User.attr_readers = { last_updated:"string", friend_count:"integer"};
 
