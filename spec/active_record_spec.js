@@ -10,7 +10,6 @@ describe("ActiveRecord", function(){
 	User.attr_readers = { last_updated:"string", friend_count:"integer"};
 
 	var user = User.new();
-	console.info(User)
 
 	it("adds setters and getters for active record based on model attr_accessors", function(){
 		_.each(User.attr_accessors , function(value,key){
