@@ -1,1 +1,1 @@
-exports = require('./lib/orm');
+exports = require('./lib');
