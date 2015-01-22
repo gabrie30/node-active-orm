@@ -1,7 +1,7 @@
 node-active-orm
 ===============
 
-** too early to use. a work in progress **
+** Incomplete and too early to use. A work in progress **
 
 Basic orm in an active record pattern.
 
